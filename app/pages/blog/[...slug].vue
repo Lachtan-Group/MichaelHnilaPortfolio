@@ -5,6 +5,6 @@
 
 <script lang="ts" setup>
 const { data: home } = await useAsyncData('blog', () => 
-  queryCollection('blog').path('/').first()
+  queryCollection('blog').first()
 )
 </script>
