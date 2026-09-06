@@ -26,5 +26,22 @@ export default defineNuxtConfig({
   site: {
     name: 'Michael Hnila Portfolio',
     url: 'portfolio.lachtan.top'
+  },
+
+  studio: {
+    route: '/admin',
+    repository: {
+      provider: 'github',
+      owner: 'LachtanGroup',
+      repo: 'MichaelHnilaPortfolio',
+      branch: 'main',
+      private: false
+    }
+  },
+
+  mdc: {
+    highlight: {
+      langs: ['cpp']
+    }
   }
 })

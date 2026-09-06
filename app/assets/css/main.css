@@ -1,2 +1,10 @@
 @import "tailwindcss";
-@import "@nuxt/ui"
+@import "@nuxt/ui";
+
+@theme {
+  --animate-blink: blink 0.85s step-end infinite;
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+}

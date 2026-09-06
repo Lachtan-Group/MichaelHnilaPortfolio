@@ -1,11 +1,11 @@
 <template>
-    <p>blog index</p>
+    <h1>Blogs</h1>
 
     <div v-if="blogs">
-        <div v-for="blog in blogs" :key="blog.id">
+        <NuxtLink v-for="blog in blogs" :key="blog.id" :to="blog.path" class="flex flex-col gap-4 border-1">
             <h2>{{ blog.title }}</h2>
             <p>{{ blog.description }}</p>
-        </div>
+        </NuxtLink>
     </div>
 </template>
 
@@ -13,4 +13,13 @@
 const { data: blogs } = await useAsyncData('blogs', () => 
   queryCollection('blog').all()
 )
+
+definePageMeta({
+  title: 'Blogs',
+  meta: [
+    { name: 'description', content: 'This is the blogs page of my portfolio' }
+  ]
+})
+
+
 </script>

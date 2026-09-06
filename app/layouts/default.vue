@@ -1,5 +1,5 @@
 <template>
-    <UHeader title="Portfolio">
+    <UHeader :title="preferredPageTitle" :toggle="false">
         <UNavigationMenu :items="headerItems" />
         
         <template #right>
@@ -7,7 +7,9 @@
         </template>
     </UHeader>  
 
-    <slot />
+    <UPage>
+        <slot />
+    </UPage>
 
 </template> 
 
@@ -30,5 +32,9 @@ const headerItems = computed<NavigationMenuItem[]>(() => [
     
 ])
 
-
+const route = useRoute()
+const preferredPageTitle = computed(() => {
+    const pageTitle = route.meta.title as string | undefined
+    return pageTitle || 'Portfolio'
+})
 </script>

@@ -1,7 +1,18 @@
 <template>
-    <div>home page</div>
+    <!-- <div>home page</div> -->
 
-    <NuxtLink to="/">Go to Portfolio</NuxtLink>
+    <!-- <NuxtLink to="/">Go to Portfolio</NuxtLink> -->
+
+  <UMain>
+    <HomeHeroSection />
+
+    <div class="flex flex-col gap-8">
+      <HomeAboutMeSection class="pt-24"/>
+      <HomeSkillsSection />
+      <HomeProjectsSection/>
+    </div>
+
+  </UMain>
 </template>
 
 
