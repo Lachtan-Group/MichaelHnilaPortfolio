@@ -11,7 +11,7 @@ seo:
   title: Hortenzia bot
   description: Discord bot written using D++ library
 startDate: 2026-08-20
-state: In-Progress
+state: Abandoned
 technologies:
   - name: C++
     icon: i-mdi:language-cpp

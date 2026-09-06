@@ -8,6 +8,7 @@ seo:
   title: New project file
   description: The
 startDate: 2026-08-27
+state: In-Progress
 technologies:
   - icon: i-lineicons:nuxt
     name: Nuxt.js

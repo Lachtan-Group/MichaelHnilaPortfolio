@@ -6,7 +6,7 @@
   <UMain>
     <HomeHeroSection />
 
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-16">
       <HomeAboutMeSection class="pt-24"/>
       <HomeSkillsSection />
       <HomeProjectsSection/>
