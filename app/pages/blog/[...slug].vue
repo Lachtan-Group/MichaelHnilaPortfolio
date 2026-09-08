@@ -8,7 +8,7 @@
       </UPageBody>
 
       <template #left>
-        <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary">
+        <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary" class="pl-0!">
           <template #top>
             <UButton
               to="/blog"

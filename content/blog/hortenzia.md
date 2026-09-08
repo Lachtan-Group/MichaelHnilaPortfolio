@@ -9,7 +9,7 @@ description: How I created Registry system for discord bot Hortenzia that regist
 
 ---
 
-# I dont knooooow
+## I dont knooooow
 
 kazda registry item sa sklada z nazvu itemu, napr. nazov commandu a factory (funkcia ktora vytvory dany item)
 
