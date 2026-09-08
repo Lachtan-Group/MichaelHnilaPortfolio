@@ -1,6 +1,8 @@
 <template>
-  <ContentRenderer v-if="home" :value="home" />
-  <div v-else>No content found</div>
+  <UContainer>
+    <ContentRenderer v-if="home" :value="home" />
+    <div v-else>No content found</div>
+  </UContainer>
 </template>
 
 <script lang="ts" setup>

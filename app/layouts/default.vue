@@ -7,9 +7,9 @@
         </template>
     </UHeader>  
 
-    <UPage>
+    <UMain>
         <slot />
-    </UPage>
+    </UMain>
 
 </template> 
 

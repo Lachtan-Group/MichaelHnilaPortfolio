@@ -2,7 +2,7 @@
   <UPageHero :ui="{ container: 'py-12 sm:py-24 lg:py-40' }">
     <template #title>
       <p class="w-full max-w-full text-center lg:text-left text-3xl sm:text-5xl xl:text-6xl font-bold tracking-tight leading-tight text-balance wrap-break-word">
-        <AppTypewriter text="Hi, I'm Michael Hnila" :speed="25" caret-width="4px" />
+        <AppTypewriter text="Hi, I'm Michael Hnila" :speed="25" :caret-width="caretWidth" />
       </p>
     </template>
     <template #description>
@@ -14,4 +14,10 @@
 </template>
 
 <script lang="ts" setup>
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const isSmUp = breakpoints.greaterOrEqual('sm')
+
+const caretWidth = computed(() => (isSmUp.value ? '4px' : '2px'))
 </script>

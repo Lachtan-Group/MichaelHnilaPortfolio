@@ -2,7 +2,7 @@
     <h1>Blogs</h1>
 
     <div v-if="blogs">
-        <NuxtLink v-for="blog in blogs" :key="blog.id" :to="blog.path" class="flex flex-col gap-4 border-1">
+        <NuxtLink v-for="blog in blogs" :key="blog.id" :to="blog.path" class="flex flex-col gap-4 border">
             <h2>{{ blog.title }}</h2>
             <p>{{ blog.description }}</p>
         </NuxtLink>
