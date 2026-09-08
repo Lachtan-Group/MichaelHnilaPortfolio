@@ -1,26 +1,31 @@
 <template>
-  <UContainer v-if="page" class="py-8">
-    <UButton to="/blog" icon="i-lucide-arrow-left" color="neutral" variant="ghost" size="sm" class="mb-6">
-      Back to blog
-    </UButton>
+  <UContainer class="py-8">
+    <UPage v-if="page">
+      <UPageHeader :title="page.title" :description="page.description" />
 
-    <UPage>
-      <UPageHeader :title="page.title" :description="page.description" class="border-b border-default pb-8" />
-
-      <UPageBody class="prose prose-neutral dark:prose-invert max-w-none">
+      <UPageBody>
         <ContentRenderer :value="page" />
       </UPageBody>
 
-      <template v-if="tocLinks.length" #left>
-        <UPageAside class="py-8">
-          <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary" />
-        </UPageAside>
+      <template #left>
+        <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary">
+          <template #top>
+            <UButton
+              to="/blog"
+              color="neutral"
+              variant="outline"
+              label="Back to blog"
+              icon="i-lucide-arrow-left"
+              class="mb-4 justify-start max-lg:hidden"
+            />
+          </template>
+        </UContentToc>
       </template>
     </UPage>
-  </UContainer>
 
-  <UContainer v-else>
-    <p>No content found</p>
+    <p v-else>
+      No content found
+    </p>
   </UContainer>
 </template>
 
