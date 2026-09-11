@@ -19,15 +19,18 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 const headerItems = computed<NavigationMenuItem[]>(() => [
     {
         label: 'Home',
-        href: '/'
+        href: '/',
+        icon: 'i-lucide-house'
     },
     {
         label: 'Projects',
-        href: '/project'
+        href: '/project',
+        icon: 'i-lucide-folder-open'
     },
     {
-        label: 'Blog',
-        href: '/blog'
+        label: 'Blogs',
+        href: '/blogs',
+        icon: 'i-lucide-notebook-pen'
     },
     
 ])

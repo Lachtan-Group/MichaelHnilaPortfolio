@@ -11,10 +11,10 @@
         <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary" class="pl-0!">
           <template #top>
             <UButton
-              to="/blog"
+              to="/blogs"
               color="neutral"
               variant="outline"
-              label="Back to blog"
+              label="Back to blogs"
               icon="i-lucide-arrow-left"
               class="mb-4 justify-start max-lg:hidden"
             />

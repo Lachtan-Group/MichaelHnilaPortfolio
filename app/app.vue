@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <UApp>
     <NuxtRouteAnnouncer />
     <!-- <NuxtWelcome /> -->
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </div>  
+  </UApp>
 </template>
 
 <script setup lang="ts">

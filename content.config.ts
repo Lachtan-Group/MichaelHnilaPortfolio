@@ -9,7 +9,7 @@ export default defineContentConfig({
         // }),
         blog: defineCollection({
             type: 'page',
-            source: 'blog/*.md',
+            source: 'blogs/*.md',
             schema: z.object({
                 title: property(z.string()),
                 description: z.string(),
@@ -19,7 +19,7 @@ export default defineContentConfig({
 
         project: defineCollection({
             type: 'page',
-            source: 'project/*.md',
+            source: 'projects/*.md',
             schema: z.object({
                 title: property(z.string()),
                 description: z.string(),

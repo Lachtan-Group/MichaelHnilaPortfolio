@@ -43,6 +43,8 @@
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.95",
     "zod": "^4.5.4",
     "zod-to-json-schema": "^3.25.2"
   },

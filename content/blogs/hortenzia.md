@@ -84,3 +84,5 @@ ehmmm nieco nieco general registry class pre vsetky z ktorej sa budu dedit vsetk
 idk
 
 ### yes sir
+
+![me](/lachtan.png){height="36" width="128"}
