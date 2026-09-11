@@ -10,9 +10,11 @@ defineProps<{
     authors?: string[] | null
 }>()
 
+const { t } = useI18n()
+
 const formatAuthors = (authors?: string[] | null) => {
     if (!authors?.length)
-        return 'Author not specified'
+        return t('home.projects.noAuthor')
 
     return authors.join(', ')
 }

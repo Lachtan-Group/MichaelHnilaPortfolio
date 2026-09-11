@@ -18,10 +18,16 @@
 
 
 <script setup lang="ts">
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('meta.homeTitle'),
+  meta: [
+    { name: 'description', content: t('meta.homeDescription') }
+  ]
+}))
+
 definePageMeta({
   title: 'Home Page',
-  meta: [
-    { name: 'description', content: 'This is the home page of my portfolio' }
-  ]
 })
 </script>

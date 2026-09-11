@@ -1,0 +1,87 @@
+header:
+  home: "Domov"
+  projects: "Projekty"
+  blogs: "Blogy"
+
+meta:
+  defaultTitle: "Portfólio"
+  appDescription: "Moje portfólio"
+  homeTitle: "Domovská stránka"
+  homeDescription: "Toto je domovská stránka môjho portfólia"
+  blogsTitle: "Blogy"
+  blogsDescription: "Toto je stránka blogov môjho portfólia"
+  projectsTitle: "Projekty"
+  projectsDescription: "Toto je stránka projektov môjho portfólia"
+
+home:
+  hero:
+    title: "Ahoj, som Michael Hnila"
+    description: "Tvorím prepracované webové aplikácie vo Vue.js, Nuxt.js a PHP frameworkoch. Som vysokoškolák zameraný na čisté a praktické produkty."
+    work: "Pozri moju prácu"
+    github: "GitHub profil"
+  about:
+    title: "Niečo málo o mne"
+    lead: "Ahoj, som Michael a veci rozoberám, aby som zistil, ako fungujú."
+    p1: "Som samouk zo Slovenska a nikdy ma neprešla fáza „ale ako to naozaj funguje?“. Preto som si postavil vlastný OAuth server, aby som konečne pochopil autentifikáciu namiesto kopírovania, polovicu života self-hostujem na Raspberry Pi, lebo platiť za VPS mi prišlo ako vzdanie sa, a píšem Discord botov o druhej ráno, lebo mi nápad nedá spať."
+    p2: "Väčšinu času dnes trávim vo Vue na frontende a v Symfony na backende, pričom to celé drží pokope Docker. Dosť si zakladám na čitateľnom kóde a na tom, aby business logika bola tam, kam patrí, lebo som už bol ten chlap, čo sa po pol roku vrátil k vlastnému kódu a netušil, čo robí. Budúci ja tú námahu oceňuje."
+    p3: "Najlepší pocit je stále, keď sa niečo, čo som postavil pre seba, ukáže ako užitočné aj niekomu inému. Preto väčšina mojich projektov začína ako „kiežby toto existovalo“ a končí na GitHube o tretej ráno s README, ktoré vraj dopíšem zajtra."
+    side:
+      comment: "// ak si zvedavý"
+      intro: "Tu žijú tie zábavné veci:"
+      blogsTitle: "Prečítaj si moje dlhšie myšlienky"
+      blogsDesc: "veci príliš dlhé na commit message"
+      projectsTitle: "Prehrab sa v mojich projektoch"
+      projectsDesc: "história a vývoj mojich predchádzajúcich projektov"
+      githubTitle: "Sleduj môj GitHub"
+      githubDesc: "surová história, čakaj experimenty"
+  education:
+    title: "Vzdelanie a ocenenia"
+    utbTitle: "Univerzita Tomáša Bati v Zlíne - Fakulta aplikovanej informatiky (UTB FAI)"
+    utbDesc: "Bakalárske štúdium aplikovanej informatiky. Zameranie na softvérové inžinierstvo, moderné webové aplikácie (Vue.js, Nuxt, Symfony, Laravel) a self-hostovanú infraštruktúru (Docker, Nginx)."
+    zenitTitle: "ZENIT v programovaní - krajské kolo, kategória A - 18. miesto"
+    zenitDesc: "V školskom roku 2025/2026 som obsadil 18. miesto v kategórii A s 91,00 bodmi a bol som uznaný ako úspešný riešiteľ krajského kola."
+    siemensTitle: "Siemens Young Generation Award - Cena mediálneho partnera ATP Journal"
+    siemensDesc: "Získal som Cenu mediálneho partnera ATP Journal za tímový projekt: model výrobného lisu s doplnkovými funkciami, riešenie neštandardných situácií"
+    schoolTitle: "Technické lýceum - Spojená škola sv. Jána Bosca (SSND), Nová Dubnica"
+    schoolDesc: "Technická stredná škola zameraná na programovanie, informatiku a technické predmety. Základy v C/C++ a webové projekty ako Zervan Testy Generator (Vue3 + TypeScript) a môj maturitný projekt JapanEase (aplikácia na učenie časovania japonských slovies)."
+  skills:
+    title: "Zručnosti"
+    stackLead: "Krátky stack, ktorý dobre poznám."
+    stackP1: "Vue na frontende, Symfony na backende, Docker to drží pokope. Radšej poznám pár nástrojov poriadne, než by som vymenoval dvadsať, ktorých som sa raz dotkol."
+    stackP2: "Inde v toolboxe: Git, Linux (denne používam Linux Mint), TypeScript, TailwindCSS, SQLite (a tiež C/C++ zo školy a práce na Discord botoch)."
+    commentTop: "// po čom siaham"
+    commentBottom: "<!-- Expert znamená, že je to zvyčajne moja prvá voľba. -->"
+    comfort:
+      expert: "Expert"
+      advanced: "Pokročilý"
+      proficient: "Zdatný"
+      intermediate: "Stredne pokročilý"
+    notes:
+      symfony: "Môj backendový domov. API, auth, Doctrine."
+      vue: "Dôvod, prečo sa frontendu nebojím."
+      docker: "Všetko, čo self-hostujem, žije v kontajneri."
+      nginx: "Naučené tvrdo na Pi. Reverzná proxy, TLS."
+      mariadb: "Moja predvolená voľba pre Symfony projekty s Doctrine."
+      postgres: "Vyberám, keď potrebujem prísnejšie dátové garancie."
+      nuxt: "Beží na ňom tento web. Stále objavujem jeho hranice."
+      cpp: "Školské základy, Discord boti s D++."
+      laravel: "Viem v ňom dodať, ale doma som v Symfony."
+  projects:
+    title: "Najnovšie projekty"
+    fallbackState: "Rozpracované"
+    noAuthor: "Autor neuvedený"
+
+blogs:
+  title: "Blogy"
+  onThisPage: "Na tejto stránke"
+  back: "Späť na blogy"
+  notFound: "Nenašiel sa žiadny obsah"
+
+projectsPage:
+  title: "Projekty"
+  listPlaceholder: "zoznam projektov"
+  notFound: "Nenašiel sa žiadny obsah"
+
+error:
+  title: "Chyba"
+  backHome: "Späť domov"

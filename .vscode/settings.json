@@ -2,5 +2,10 @@
     "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
     "github.copilot.chat.commitMessageGeneration.instructions": [
         { "file": "${workspaceFolder}/.github/commit-instructions.md" }
-    ]
+    ],
+    "i18n-ally.localesPaths": [
+        "i18n",
+        "i18n/locales"
+    ],
+    "i18n-ally.keystyle": "nested"
 }

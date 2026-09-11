@@ -8,13 +8,13 @@
       </UPageBody>
 
       <template #left>
-        <UContentToc title="On this page" :links="tocLinks" highlight highlight-color="primary" class="pl-0!">
+        <UContentToc :title="t('blogs.onThisPage')" :links="tocLinks" highlight highlight-color="primary" class="pl-0!">
           <template #top>
             <UButton
               to="/blogs"
               color="neutral"
               variant="outline"
-              label="Back to blogs"
+              :label="t('blogs.back')"
               icon="i-lucide-arrow-left"
               class="mb-4 justify-start max-lg:hidden"
             />
@@ -24,12 +24,13 @@
     </UPage>
 
     <p v-else>
-      No content found
+      {{ t('blogs.notFound') }}
     </p>
   </UContainer>
 </template>
 
 <script lang="ts" setup>
+const { t } = useI18n()
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () =>

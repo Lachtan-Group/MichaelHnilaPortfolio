@@ -1,6 +1,6 @@
 <template>
     <UContainer class="w-full">
-        <AppSectionHeader title="Latest Projects" />
+        <AppSectionHeader :title="t('home.projects.title')" />
         
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <UPageCard
@@ -34,6 +34,8 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 const { data: projects } = await useAsyncData('projects', 
     () => queryCollection('project')
         .order('startDate', 'DESC')

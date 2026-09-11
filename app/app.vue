@@ -9,11 +9,13 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: 'Portfolio',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('meta.defaultTitle'),
   meta: [
-    { name: 'description', content: 'My Portfolio' },
+    { name: 'description', content: t('meta.appDescription') },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ]
-})
+}))
 </script>

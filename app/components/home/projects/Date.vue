@@ -11,12 +11,14 @@ defineProps<{
     endDate?: string | null
 }>()
 
+const { locale } = useI18n()
+
 const formatDate = (value: string) => {
     const date = new Date(value)
 
     if (Number.isNaN(date.getTime()))
         return value
 
-    return new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(date)
+    return new Intl.DateTimeFormat(locale.value, { month: 'short', year: 'numeric' }).format(date)
 }
 </script>

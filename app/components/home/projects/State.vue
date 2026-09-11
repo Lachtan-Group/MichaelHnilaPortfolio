@@ -1,5 +1,5 @@
 <template>
-    <span class="font-medium" :class="stateClass">{{ state ?? 'In progress' }}</span>
+    <span class="font-medium" :class="stateClass">{{ state ?? t('home.projects.fallbackState') }}</span>
 </template>
 
 <script setup lang="ts">

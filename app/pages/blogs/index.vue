@@ -1,5 +1,5 @@
 <template>
-    <h1>Blogs</h1>
+    <h1>{{ t('blogs.title') }}</h1>
 
     <div v-if="blogs">
         <NuxtLink v-for="blog in blogs" :key="blog.id" :to="blog.path" class="flex flex-col gap-4 border">
@@ -10,15 +10,21 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 const { data: blogs } = await useAsyncData('blogs', () => 
   queryCollection('blog').all()
 )
 
+useHead(() => ({
+  title: t('meta.blogsTitle'),
+  meta: [
+    { name: 'description', content: t('meta.blogsDescription') }
+  ]
+}))
+
 definePageMeta({
   title: 'Blogs',
-  meta: [
-    { name: 'description', content: 'This is the blogs page of my portfolio' }
-  ]
 })
 
 

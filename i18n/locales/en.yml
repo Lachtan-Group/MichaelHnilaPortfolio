@@ -1,0 +1,87 @@
+header:
+  home: "Home"
+  projects: "Projects"
+  blogs: "Blogs"
+
+meta:
+  defaultTitle: "Portfolio"
+  appDescription: "My Portfolio"
+  homeTitle: "Home Page"
+  homeDescription: "This is the home page of my portfolio"
+  blogsTitle: "Blogs"
+  blogsDescription: "This is the blogs page of my portfolio"
+  projectsTitle: "Projects"
+  projectsDescription: "This is the projects page of my portfolio"
+
+home:
+  hero:
+    title: "Hi, I'm Michael Hnila"
+    description: "I build polished web applications with Vue.js, Nuxt.js, and PHP frameworks. I'm a university student focused on creating clean, practical products."
+    work: "See my work"
+    github: "GitHub profile"
+  about:
+    title: "Little about myself"
+    lead: "Hey, I'm Michael and I break things to figure out how they work."
+    p1: "I'm a self-taught developer from Slovakia, and I never really grew out of the \"but how does it actually work?\" phase. That's how I ended up building my own OAuth server just so I'd finally understand auth instead of copy-pasting it, self-hosting half my life on a Raspberry Pi because paying for a VPS felt like giving up, and writing Discord bots at 2am just because the idea wouldn't leave me alone."
+    p2: "These days I spend most of my time in Vue on the frontend and Symfony on the backend, with Docker holding the whole mess together. I'm pretty picky about keeping code readable and keeping business logic where it belongs because I've been the guy coming back to his own code six months later with no idea what it does. Future-me appreciates the effort."
+    p3: "The best feeling is still when something I built for myself turns out to be useful to someone else. That's why most of my projects start as \"I wish this existed\" and end up on GitHub at 3am with a README I promise I'll finish tomorrow."
+    side:
+      comment: "// if you're curious"
+      intro: "Here's where the fun stuff lives:"
+      blogsTitle: "Read my longer thoughts"
+      blogsDesc: "stuff too long for a commit message"
+      projectsTitle: "Dig through my projects"
+      projectsDesc: "history and development on my previous projects"
+      githubTitle: "Follow my GitHub"
+      githubDesc: "raw history, expect experiments"
+  education:
+    title: "Education & Awards"
+    utbTitle: "Tomáš Bata University in Zlín - Faculty of Applied Informatics (UTB FAI)"
+    utbDesc: "Bachelor's studies in Applied Informatics. Focus on software engineering, modern web applications (Vue.js, Nuxt, Symfony, Laravel) and self-hosted infrastructure (Docker, Nginx)."
+    zenitTitle: "ZENIT in Programming - Regional Round, Category A - 18th Place"
+    zenitDesc: "In school year 2025/2026 placed 18th in Category A with 91.00 points and recognized as a successful solver at the regional round."
+    siemensTitle: "Siemens Young Generation Award - ATP Journal Media Partner Award"
+    siemensDesc: "Awarded the ATP Journal Media Partner Award for a team project: model of a production press with additional functions, solving non-standard situations"
+    schoolTitle: "Technické lýceum - Spojená škola sv. Jána Bosca (SSND), Nová Dubnica"
+    schoolDesc: "Technical high school focused on programming, informatics and technical subjects. Foundations in C/C++ and web projects like Zervan Testy Generator (Vue3 + TypeScript) and my maturita project, JapanEase (Japanese verb-conjugation learning app)."
+  skills:
+    title: "Skills"
+    stackLead: "A short stack I know well."
+    stackP1: "Vue on the frontend, Symfony on the backend, Docker holding it together. I'd rather know a few tools properly than list twenty I touched once."
+    stackP2: "Elsewhere in the toolbox: Git, Linux (running Linux Mint daily), TypeScript, TailwindCSS, SQLite (and also C/C++ from school and Discord bot work)."
+    commentTop: "// what I reach for"
+    commentBottom: "<!-- Expert means it's usually my first pick. -->"
+    comfort:
+      expert: "Expert"
+      advanced: "Advanced"
+      proficient: "Proficient"
+      intermediate: "Intermediate"
+    notes:
+      symfony: "My backend home. APIs, auth, Doctrine."
+      vue: "The reason frontend doesn't scare me."
+      docker: "Everything I self-host lives in a container."
+      nginx: "Learned the hard way on a Pi. Reverse proxy, TLS."
+      mariadb: "My default for Symfony projects with Doctrine."
+      postgres: "Picked when I need stricter data guarantees."
+      nuxt: "Runs this site. Still finding its edges."
+      cpp: "School foundations, Discord bots with D++."
+      laravel: "Can ship in it, but Symfony is home."
+  projects:
+    title: "Latest Projects"
+    fallbackState: "In progress"
+    noAuthor: "Author not specified"
+
+blogs:
+  title: "Blogs"
+  onThisPage: "On this page"
+  back: "Back to blogs"
+  notFound: "No content found"
+
+projectsPage:
+  title: "Projects"
+  listPlaceholder: "project list"
+  notFound: "No content found"
+
+error:
+  title: "Error"
+  backHome: "Go back home"

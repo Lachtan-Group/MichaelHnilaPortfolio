@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@vueuse/nuxt',
     '@nuxtjs/seo',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxtjs/i18n'
   ],
 
   css: ["~/assets/css/main.css"],
@@ -43,5 +44,13 @@ export default defineNuxtConfig({
     highlight: {
       langs: ['cpp']
     }
+  },
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'English', file: 'en.yml' },
+      { code: 'sk', iso: 'sk-SK', name: 'Slovak', file: 'sk.yml' },
+    ]
   }
 })

@@ -5,7 +5,7 @@
       icon="i-mdi-folder-multiple-outline"
       size="lg"
     >
-      See my work
+      {{ t('home.hero.work') }}
     </UButton>
     <UButton
       external
@@ -14,13 +14,13 @@
       icon="i-mdi-github"
       size="lg"
     >
-      GitHub profile
+      {{ t('home.hero.github') }}
     </UButton>
   </div>
 </template>
 
 <script lang="ts" setup>
-
+const { t } = useI18n()
 </script>
 
 <style>

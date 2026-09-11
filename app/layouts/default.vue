@@ -3,6 +3,7 @@
         <UNavigationMenu :items="headerItems" />
         
         <template #right>
+            <AppButtonLocale />
             <UColorModeButton />
         </template>
     </UHeader>  
@@ -18,26 +19,26 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 
 const headerItems = computed<NavigationMenuItem[]>(() => [
     {
-        label: 'Home',
+        label: t('header.home'),
         href: '/',
         icon: 'i-lucide-house'
     },
     {
-        label: 'Projects',
+        label: t('header.projects'),
         href: '/project',
         icon: 'i-lucide-folder-open'
     },
     {
-        label: 'Blogs',
+        label: t('header.blogs'),
         href: '/blogs',
         icon: 'i-lucide-notebook-pen'
     },
     
 ])
-
+const { t } = useI18n()
 const route = useRoute()
 const preferredPageTitle = computed(() => {
     const pageTitle = route.meta.title as string | undefined
-    return pageTitle || 'Portfolio'
+    return pageTitle || t('meta.defaultTitle')
 })
 </script>

@@ -5,7 +5,8 @@
       </span>
       <UIcon
         :name="skill.icon"
-        class="size-5 shrink-0 translate-y-0.5 text-dimmed transition-colors group-hover:text-primary"
+        class="size-5 shrink-0 translate-y-0.5 text-dimmed transition-colors"
+        :class="skill.iconHoverClass ?? 'group-hover:text-primary'"
       />
       <span class="min-w-0 flex-1">
         <span class="flex items-baseline justify-between gap-3">
@@ -30,6 +31,7 @@ defineProps<{
     comfort: string;
     icon: string;
     note: string;
+    iconHoverClass?: string;
   };
   idx: number;
 }>();
